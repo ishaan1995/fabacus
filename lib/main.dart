@@ -74,6 +74,7 @@ class KeyButton extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
+        customBorder: new CircleBorder(),
         onTap: () {
           if (title == '=') {
             String expression = controller.text;
@@ -120,6 +121,7 @@ class OperatorButton extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
+        customBorder: new CircleBorder(),
         onTap: () {
           if (title == 'clr') {
             controller?.text = "";
